@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // 리액트 엄격모드
-  // 1. index.html에 div root 를 Root로 생성
-  // 2. import App from './App' 을 <App/> 에 생성
   <React.StrictMode>
-    <BrowserRouter><App /></BrowserRouter> 
+    <App />
   </React.StrictMode>
 );
 
